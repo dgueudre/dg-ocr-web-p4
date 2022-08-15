@@ -22,7 +22,11 @@
     </head>
     <body>
         <body>
-            {% block content %}{% endblock %}
+            <!-- Principal conteneur -->
+            <div class="page-container">
+                {% include "navigation.njk" %}
+                {% block content %}{% endblock %}
+            </div>
         </body>
     </body>
 </html>
