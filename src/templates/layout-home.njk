@@ -1,5 +1,7 @@
 {% extends "layout-base.njk" %}
-{% block javascript %}
+{% block head %}
+    <link rel="preload" fetchpriority="high" as="image" href="img/agence-la-panthere.jpg" type="image/jpeg">
+
     <script src="./js/jquery.touchSwipe.min.js" defer="defer"></script>
     <script src="./js/gmaps.min.js"></script>
 {% endblock %}
