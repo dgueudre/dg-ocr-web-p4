@@ -1,0 +1,15 @@
+.img-responsive {
+    width: 100%;
+}
+
+p {
+    font-size: 14px;
+}
+
+h2 {
+    line-height: 1.2em;
+}
+
+.modal-body .fa {
+    color: white;
+}
