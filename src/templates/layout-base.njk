@@ -25,8 +25,9 @@
         <body>
             <!-- Principal conteneur -->
             <div class="page-container">
-                {% include "navigation.njk" %}
+                {% include "layout-header.njk" %}
                 {% block content %}{% endblock %}
+                {% include "layout-footer.njk" %}
             </div>
         </body>
     </body>
