@@ -12,9 +12,7 @@
             <div class="row tight-width-whitespace">
                 <div class="col-sm-12">
                     <img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="{{ site.logoAlt }}"/>
-                    <h1 class="text-center hero-bloc-text white ">
-                        Agence La Panthère
-                    </h1>
+                    <h1 class="text-center hero-bloc-text white">{{ site.title }}</h1>
                     <div class="text-center">
                         <a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
                     </div>
@@ -33,39 +31,15 @@
                 </div>
             </div>
             <div class="row voffset-lg med-width-whitespace">
-                <div class="col-sm-4">
-                    <div class="text-center">
-                        <span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+                {% for service in services %}
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <span class="{{ service.icon }} sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+                        </div>
+                        <h3 class="mg-md text-center">{{ service.title }}</h3>
+                        <p class="text-center">{{ service.description }}</p>
                     </div>
-                    <h3 class="mg-md text-center">
-                        Web design
-                    </h3>
-                    <p class="text-center ">
-                        Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="text-center">
-                        <span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-                    </div>
-                    <h3 class="mg-md text-center">
-                        &nbsp;Stratégie
-                    </h3>
-                    <p class="text-center ">
-                        Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <div class="text-center">
-                        <span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-                    </div>
-                    <h3 class="mg-md text-center">
-                        Illustrations
-                    </h3>
-                    <p class="text-center ">
-                        Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
-                    </p>
-                </div>
+                {% endfor %}
             </div>
             <div class="row voffset-lg voffset">
                 <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">

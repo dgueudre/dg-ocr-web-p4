@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "et-icon-browser",
+        "title": "Web design",
+        "description": "Que vous ayez un site web qui a besoin d'un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier."
+    },
+    {
+        "icon": "et-icon-presentation",
+        "title": "Stratégie",
+        "description": "Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible."
+    },
+    {
+        "icon": "et-icon-edit",
+        "title": "Illustrations",
+        "description": "Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance."
+    }
+]
